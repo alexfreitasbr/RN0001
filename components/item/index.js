@@ -1,8 +1,11 @@
 import { styles } from "./styles";
 import { Text, View, FlatList, Button, TextInput } from "react-native";
-
-export default function Item() {
-    return(
-        <Text>item</Text>
-    )
+import BottomUI from "../buttomui";
+export default function Item({ item, action }) {
+  return (
+    <View style={styles.listItem}>
+      <Text style={styles.itemTitle}>{item}</Text>
+      <BottomUI label="Remove" action={() => action(item)} />
+    </View>
+  );
 }
