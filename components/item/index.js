@@ -1,5 +1,5 @@
 import { styles } from "./styles";
-import { Text, View, FlatList, Button, TextInput } from "react-native";
+import { Text, View} from "react-native";
 import BottomUI from "../buttomui";
 export default function Item({ item, action }) {
   return (

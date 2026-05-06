@@ -1,5 +1,5 @@
 import { styles } from "./styles";
-import { Text, View, FlatList, Button} from "react-native";
+import { View, FlatList} from "react-native";
 import Item from'../item'
 
 export default function List({goalList, removeGoalHandler}) {
